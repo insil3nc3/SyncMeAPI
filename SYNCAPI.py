@@ -5,7 +5,7 @@ from pymongo.server_api import ServerApi
 app = FastAPI()
 
 # Подключение к MongoDB Atlas
-uri = "mongodb+srv://insil3nc3:11332222kaQ@zamkid.t7pru.mongodb.net/?retryWrites=true&w=majority&appName=zamkid"
+uri = URI
 client = MongoClient(uri, server_api=ServerApi('1'))
 
 # Подключение к базе данных и коллекции
